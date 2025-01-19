@@ -70,7 +70,16 @@ export default function PersonalInfoForm({
                       ref={photoInputRef}
                     />
                   </FormControl>
-                  <Button variant="secondary" type="button" onClick={() => {}}>
+                  <Button
+                    variant="secondary"
+                    type="button"
+                    onClick={() => {
+                      fieldValues.onChange(null);
+                      if (photoInputRef.current) {
+                        photoInputRef.current.value = "";
+                      }
+                    }}
+                  >
                     Remove
                   </Button>
                 </div>
