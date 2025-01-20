@@ -1,7 +1,5 @@
 // githubic opshin copy arac
 
-
-
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -20,7 +18,7 @@ import {
   DndContext,
   DragEndEvent,
   KeyboardSensor,
-  PointerSensor,  
+  PointerSensor,
   useSensor,
   useSensors,
 } from "@dnd-kit/core";
@@ -158,7 +156,7 @@ function EducationItem({ id, form, index, remove }: EducationItemProps) {
       className={cn(
         "space-y-3 rounded-md border bg-background p-3",
         isDragging && "relative z-50 cursor-grab shadow-xl",
-      )} 
+      )}
       ref={setNodeRef}
       style={{
         transform: CSS.Transform.toString(transform),
