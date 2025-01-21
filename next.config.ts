@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "ep-falling-bar-a2xbaglj.eu-central-1.aws.neon.tech",
+        hostname: "xl6lrpkqzar3bavb.public.blob.vercel-storage.com"
       },
     ],
   },
